@@ -1,9 +1,10 @@
 import React from 'react';
+import { Header } from './Header';
 
 export const Madlibs = () => {
   return (
     <div>
-      <h1>Madlibs!</h1>
+      <Header />
     </div>
   );
 };
