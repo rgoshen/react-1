@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Header } from './Header';
 import fetchText from '../data/fetchText';
 import MadLibsForm from './MadLibsForm';
+import '../styles/Madlibs.css';
 
 export const Madlibs = () => {
   const [madlibs, setMadlibs] = useState({});
