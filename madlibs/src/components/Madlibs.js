@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Header } from './Header';
 import fetchText from '../data/fetchText';
 import MadLibsForm from './MadLibsForm';
+import { Story } from './Story';
 import '../styles/Madlibs.css';
 
 export const Madlibs = () => {
@@ -73,7 +74,12 @@ export const Madlibs = () => {
           errorIds={errorIds}
         />
       ) : (
-        <h2>{madlibs.title}</h2>
+        <Story
+          userInput={Object.values(userInput)}
+          story={madlibs.value}
+          title={madlibs.title}
+          newStory={newStory}
+        />
       )}
     </>
   );
