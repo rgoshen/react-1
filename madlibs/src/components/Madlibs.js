@@ -16,18 +16,15 @@ export const Madlibs = () => {
   }, []);
 
   function getData() {
-    const data = fetchText;
-    setMadlibs({ ...data });
+    fetchText().then((data) => {
+      setMadlibs({ ...data });
 
-    console.log('====================================');
-    console.log(data);
-    console.log('====================================');
-
-    data.blanks.map((blank, index) => {
-      setUserInput((prevUserInput) => ({
-        ...prevUserInput,
-        [`${index}-${blank}`]: '',
-      }));
+      data.blanks.map((blank, index) =>
+        setUserInput((prevUserInput) => ({
+          ...prevUserInput,
+          [`${index}-${blank}`]: '',
+        }))
+      );
     });
   }
 
