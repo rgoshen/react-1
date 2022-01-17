@@ -11,6 +11,7 @@ export const StyledHeader = styled.header`
   box-shadow: 0 0 10px grey;
   & > .header-title {
     color: blue;
+    font-size: 2rem;
   }
   & > .header-text {
     font-style: italic;
