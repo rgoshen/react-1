@@ -4,6 +4,8 @@
 
 - Answer the following questions in conceptual.
 
+[conceptual](/conceptual.md)
+
 ## Part 2: addCommas
 
 - Write a function called addCommas which accepts a number and converts it into a string formatted with commas added for readability.
